@@ -1,0 +1,10 @@
+
+{% block content %}
+{% block scripts %}
+    <link href='{{ url_for("static",filename="css/style.css")}}' rel='stylesheet' type='text/css'/>
+{% endblock %}
+    <div class='content'>
+        {% block app_content %}
+        {% endblock %}
+    </div>
+{% endblock %}
